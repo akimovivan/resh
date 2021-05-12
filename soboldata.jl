@@ -9,7 +9,7 @@ function f(n, x, y)
     9*sum/n
 end
 
-n = 4000
+n = 18000
 
 s = SobolSeq(2)
 
