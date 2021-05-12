@@ -33,14 +33,16 @@ fiboarr = [fibo(i) for i = 2:n]
 arr = Float64[]
 par = Int64[]
 
-#for i = 3:n
-#    push!(par, fiboarr[i-1])
-#    push!(arr, f(fiboarr[i-1], fiboarr[i]))
-#end
-#ab = DataFrame(dots=fiboarr[3:n],
-#               a = par,
-#               data = arr)
-#CSV.write("17711.csv", ab) 
+#=
+for i = 3:n
+    push!(par, fiboarr[i-1])
+    push!(arr, f(fiboarr[i-1], fiboarr[i]))
+end
+ab = DataFrame(dots=fiboarr[3:n],
+               a = par,
+               data = arr)
+CSV.write("17711.csv", ab) 
+=#
 
 s = SobolSeq(2)
 
