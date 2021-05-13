@@ -21,7 +21,3 @@ println(f(s, p, n))
 sob = SobolSeq(s)
 p = reduce(hcat, next!(sob) for i = 1:n)'
 println(f(s, p, n))
-
-
-
-            
