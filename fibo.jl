@@ -1,21 +1,10 @@
 using CSV, DataFrames
 using Sobol
 
-function f(a, n)
-    sum = 0
-    for i = 1:n
-        sum += (1-2*rem(i/n, 1))^2 * (1-2*rem(a*i/n, 1))^2
-    end
-    9*sum/n
-end
+f(a, n) = 9sum((1-2rem(i/n, 1))^2 * (1-2rem(a*i/n, 1))^2 for i = 1:n )/n 
 
-function f(n, x, y)
-    sum = 0
-    for i = 1:n
-        sum += (1-2*x[i])^2 * (1-2*y[i])^2
-    end
-    9*sum/n
-end
+f(n,x,y) = 9sum((1-2*x[i])^2 * (1-2*y[i])^2 for i = 1:n)/n
+
 
 
 function fibo(n)
@@ -25,6 +14,7 @@ function fibo(n)
    end
    arr
 end
+
 n = 22
 fiboarr = fibo(n)
 
