@@ -15,7 +15,7 @@ function fibo(n)
    arr
 end
 
-n = 22
+n = 27
 fiboarr = fibo(n)
 
 
